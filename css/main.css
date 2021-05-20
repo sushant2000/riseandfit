@@ -1,0 +1,17 @@
+body {
+  background-color: rgb(134, 87, 87);
+}
+
+.firstSection {
+  position: relative;
+  height: 85vh;
+  width: 100%;
+  clip-path: polygon(100% 0px, 100% 71.68%, 66.16% 100%, 0px 76.74%, 0px 0px);
+  z-index: 4;
+}
+
+.background {
+  background: rgba(0, 0, 0, 0.2) url("../image/spider.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+}
