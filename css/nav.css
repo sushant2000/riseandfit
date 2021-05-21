@@ -94,6 +94,10 @@
     background: #343148 !important;
   }
 
+  .navbar.nav-sticky {
+    position: sticky;
+  }
+
   .navbar .navbar-brand span {
     color: #ffffff;
   }
