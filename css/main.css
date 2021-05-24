@@ -10,16 +10,13 @@ body {
     rgba(255, 94, 98, 1) 83%
   );
 }
-video {
-  width: 100%;
-  height: auto;
-}
+
 .firstSection {
   position: relative;
   width: 100%;
   height: auto;
   width: 100%;
-  clip-path: polygon(100% 0px, 100% 71.68%, 66.16% 100%, 0px 76.74%, 0px 0px);
+  /* clip-path: polygon(100% 0px, 100% 71.68%, 66.16% 100%, 0px 76.74%, 0px 0px); */
   /* clip-path: polygon(100% 0px, 100% 61.96%, 54.99% 88.46%, 0 64.78%, 0px 0px); */
   z-index: 4;
 }
@@ -129,9 +126,6 @@ sans-serif,
   background-blend-mode: darken;
 }
 
-.aImg {
-  /* width: 40%; */
-}
 /*Slider*/
 
 /*Floating Button to the top*/
