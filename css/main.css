@@ -119,6 +119,19 @@ sans-serif,
   max-width: 100%;
   height: auto;
 }
+
+.aImgDiv {
+  /* text-align: center;
+  margin-bottom: 85px; */
+  height: 100vh;
+  background: rgba(0, 0, 0, 0) url(/image/yoga.png);
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.aImg {
+  /* width: 40%; */
+}
 /*Slider*/
 
 /*Floating Button to the top*/
