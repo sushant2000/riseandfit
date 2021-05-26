@@ -68,7 +68,8 @@
 
 @media (min-width: 992px) {
   .navbar {
-    position: absolute;
+    position: fixed;
+    top: 0;
     width: 100%;
     padding: 20px 60px;
     background: rgba(0, 0, 0, 0.1) !important;

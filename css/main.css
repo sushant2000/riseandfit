@@ -29,6 +29,7 @@ body {
 }
 
 .cards {
+  width: 98.7%;
   flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
