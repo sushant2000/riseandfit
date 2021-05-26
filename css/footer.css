@@ -4,7 +4,8 @@ footer {
   height: auto;
   padding: 50px 50px;
   box-sizing: border-box;
-  background-color: #111;
+  /* background-color: #111; */
+  background-color: #232f3e;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -40,11 +41,11 @@ footer .f-container h2:before {
   left: 0px;
   width: 50px;
   height: 2px;
-  background-color: rgba(255, 153, 102, 1);
+  background-color: rgba(255, 94, 98, 1);
 }
 
 footer p {
-  color: #999;
+  color: #ddd;
   margin-top: 1em;
 }
 

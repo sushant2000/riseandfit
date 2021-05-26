@@ -77,7 +77,8 @@
 
   .navbar.nav-sticky {
     padding: 10px 60px;
-    background: #000000 !important;
+    /* background: rgba(255, 153, 102, 1) !important; */
+    background: rgba(255, 94, 98, 1) !important;
   }
 
   .navbar a.nav-link {
