@@ -4,10 +4,12 @@ footer {
   height: auto;
   padding: 50px 50px;
   box-sizing: border-box;
-  background-color: #111;
+  /* background-color: #111; */
+  background-color: #232f3e;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  z-index: 10;
 }
 
 footer .f-container {
@@ -39,11 +41,11 @@ footer .f-container h2:before {
   left: 0px;
   width: 50px;
   height: 2px;
-  background-color: #f00;
+  background-color: rgba(255, 94, 98, 1);
 }
 
 footer p {
-  color: #999;
+  color: #ddd;
   margin-top: 1em;
 }
 
@@ -67,13 +69,14 @@ footer p {
   align-items: center;
   margin-right: 10px;
   text-decoration: none;
-  border: 2px solid #e9204f;
+  border: 2px solid rgba(255, 94, 98, 1);
   border-radius: 10px 100px / 120px;
 }
 .sci li a:hover {
   height: 45px;
   width: 45px;
   transition: all 0.2s ease-in-out;
+  background-color: rgba(255, 153, 102, 1);
 }
 
 .sci li a .fab {
@@ -185,17 +188,17 @@ footer p {
   footer .f-container h2 {
     text-align: center;
     display: inline;
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid rgba(255, 153, 102, 1);
   }
 
   footer .f-container .quickLinks h2 {
     display: inline;
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid rgba(255, 153, 102, 1);
   }
 
   footer .f-container .contact h2 {
     display: inline-block;
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid rgba(255, 153, 102, 1);
     margin-bottom: 20px;
   }
 

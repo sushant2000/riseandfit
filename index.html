@@ -2,136 +2,248 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nav bar</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./image/favicon.png">
+  <title>Rise and Fit</title>
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
-        rel="stylesheet">
-    <!-- CSS Libraries -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/93c73bfd5a.js" crossorigin="anonymous"></script>
-    <!-- My Stylesheet -->
-    <link href="./css/nav.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/footer.css" type="text/css">
-    <link rel="stylesheet" href="./css/main.css" type="text/css">
-
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet" />
+  <!-- CSS Libraries -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/93c73bfd5a.js" crossorigin="anonymous"></script>
+  <!-- My Stylesheet -->
+  <link href="./css/nav.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./css/footer.css" type="text/css">
+  <link rel="stylesheet" href="./css/main.css" type="text/css">
+  <link rel="stylesheet" href="./css/popupAnimation.css" type="text/css">
 </head>
 
 <body>
 
-    <!-- Nav Bar Start -->
-    <div class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <div class="container-fluid">
-            <a href="index.html" class="navbar-brand">LOGO</a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
+  <!-- Pop up Window Start -->
+  <div id="myModal" class="modal fade">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body">
+
+          <div class="homeVideo">
+
+            <button type="button" class="close modalDisplay" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fas fa-times"></i></span>
             </button>
 
-            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav ml-auto">
-                    <a href="index.html" class="nav-item nav-link ">Home</a>
-                    <a href="" class="nav-item nav-link">About</a>
-                    <a href="" class="nav-item nav-link">Service</a>
-                    <a href="" class="nav-item nav-link">Programs</a>
-                    <a href="" class="nav-item nav-link">Blog</a>
-                    <a href="" class="nav-item nav-link">Contact</a>
-                </div>
-            </div>
+            <video class="firstSection" autoplay muted loop>
+              <source src="./dimaond video/RISE & FIT.mp4" type="video/mp4">
+              Your browser does not support playing this Video
+            </video>
+          </div>
+
         </div>
+      </div>
     </div>
-    <!-- Nav Bar End -->
+  </div>
+  <!-- Pop up Window close -->
 
-    <div class="main">
+  <!-- Nav Bar Start -->
+  <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a href="index.html" class="navbar-brand">LOGO</a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="firstSection  background">
+      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+        <div class="navbar-nav ml-auto">
+          <a href="index.html" class="nav-item nav-link">Home</a>
+          <a href="" class="nav-item nav-link">About</a>
+          <a href="" class="nav-item nav-link">Service</a>
+          <a href="" class="nav-item nav-link">Programs</a>
+          <a href="" class="nav-item nav-link">Blog</a>
+          <a href="" class="nav-item nav-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Nav Bar End -->
+
+
+
+  <div class="main">
+
+    <div style="width: 100%;">
+
+      <div class="cards">
+
+        <div class="menu__container">
+          <img class="card-img-top card-img" src="image/mindfulness_.png" alt="Card image">
+          <h5 class="">Stress management</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum</p>
+          <a href="#" class="btn card-btn">Know More</a>
+          <div class="card-img-overlay">
+          </div>
         </div>
 
-
-
-        <div class="content" style="height: 100vh;">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque tempora illo dolorum ex nihil quasi porro
-            accusamus. Fuga omnis assumenda nostrum aspernatur hic perspiciatis totam quas, maiores magnam quisquam ad?
-            Architecto libero earum voluptatem error molestias expedita aliquam reiciendis ad, repellendus assumenda a
-            explicabo minima harum. Dignissimos ducimus quas fugit deserunt voluptatem numquam quaerat odio esse
-            necessi
+        <div class="menu__container">
+          <img class="card-img-top card-img" src="image/mindfulness_.png" alt="Card image">
+          <h5 class="">Stress management</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum</p>
+          <a href="#" class="btn card-btn" style=" background-color:black;">Know More</a>
+          <div class="card-img-overlay">
+          </div>
         </div>
 
+        <div class="menu__container">
+          <img class="card-img-top card-img" src="image/mindfulness_.png" alt="Card image">
+          <h5 class="">Stress management</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum</p>
+          <a href="#" class="btn card-btn">Know More</a>
+          <div class="card-img-overlay">
+          </div>
+        </div>
 
+      </div>
 
     </div>
 
-    <!-- Footer Start -->
-    <footer>
-        <div class="f-container">
-            <div class="sec aboutus">
-                <h2>About Us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam vitae ex eos tempora possimus
-                    veniam ab maxime eligendi dolor cum?
-                </p>
-                <ul class="sci">
-                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fas fa-envelope"></i></a></li>
-                </ul>
-            </div>
+    <div class="cards">
 
-            <div class="sec quickLinks">
-                <h2>Quick Links</h2>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="sec contact">
-                <H2>Contact Info</H2>
-                <ul class="info">
-                    <li>
-                        <span><i class="fas fa-map-marker-alt"></i></span>
-                        <span>this is the address of office</span>
-                    </li>
-                    <li>
-                        <span><i class="fas fa-phone-alt"></i></span>
-                        <span>
-                            <p><a href="tel:123456789">+91 123456789</a></p>
-                        </span>
-                    </li>
-                    <li>
-                        <span><i class="far fa-envelope"></i></span>
-                        <span>
-                            <p><a href="mailto:this@gmail.com">this@gmail.com</a></p>
-                        </span>
-
-                    </li>
-                </ul>
-
-            </div>
-
-
-
+      <div class="menu__container">
+        <img class="card-img-top card-img" src="image/mindfulness_.png" alt="Card image">
+        <h5 class="">Stress management</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum</p>
+        <a href="#" class="btn card-btn">Know More</a>
+        <div class="card-img-overlay">
         </div>
-    </footer>
-    <div class="copyrightText">
-        <p>copyright &copy; 2021 Rise and Fit. All Right Reserved</p>
-    </div>
-    <!-- footer end -->
+      </div>
 
+      <div class="menu__container">
+        <img class="card-img-top card-img" src="image/mindfulness_.png" alt="Card image">
+        <h5 class="">Stress management</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum</p>
+        <a href="#" class="btn card-btn" style=" background-color:black;">Know More</a>
+        <div class="card-img-overlay">
+        </div>
+      </div>
+
+      <div class="menu__container">
+        <img class="card-img-top card-img" src="image/mindfulness_.png" alt="Card image">
+        <h5 class="">Stress management</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum</p>
+        <a href="#" class="btn card-btn">Know More</a>
+        <div class="card-img-overlay">
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Card Why RAF? -->
+    <div class="img-text">
+      <div class="photo">
+        <img src="image/lotus.svg" alt="">
+      </div>
+      <div class="content element">
+        <h1>WHY RAF?</h1>
+        <p>Weaving fitness into everyday lifestyle!</p>
+        <p>Let's take a step, invest your time and energy, yourself for the good of you and your family. Come join the
+          way
+          to a healthy life. Weaving fitness into your busy lifestyle!</p>
+      </div>
+    </div>
+
+    <div class="aImgDiv">
+      <!-- <img class="aImg" src="./image/yoga.png" alt="yoga image"> -->
+    </div>
+
+  </div>
+
+
+
+  <!--Slider -->
+
+  <!-- Floating Button to the top-->
+  <a href="#" id="scroll"><span></span></a>
+
+  <!-- Footer Start -->
+  <footer>
+    <div class="f-container">
+      <div class="sec aboutus">
+        <h2>About Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam
+          vitae ex eos tempora possimus veniam ab maxime eligendi dolor cum?
+        </p>
+        <ul class="sci">
+          <li>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sec quickLinks">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="sec contact">
+        <h2>Contact Info</h2>
+        <ul class="info">
+          <li>
+            <span><i class="fas fa-map-marker-alt"></i></span>
+            <span>this is the address of office</span>
+          </li>
+          <li>
+            <span><i class="fas fa-phone-alt"></i></span>
+            <span>
+              <p><a href="tel:123456789">+91 123456789</a></p>
+            </span>
+          </li>
+          <li>
+            <span><i class="far fa-envelope"></i></span>
+            <span>
+              <p><a href="mailto:this@gmail.com">this@gmail.com</a></p>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div class="copyrightText">
+    <p>Copyright &copy; 2021 Rise and Fit. All Right Reserved</p>
+  </div>
+  <!-- footer end -->
 </body>
 <!-- JavaScript Libraries -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
 
+<!-- Navigation Bar Javascript -->
+<script src="./js/nav.js"></script>
 
-<!-- Template Javascript -->
-<script src="js/nav.js"></script>
+<!-- Pop up Animation Javascript -->
+<script src="./js/popupAnimation.js"></script>
+
+<!--Scroll to Top Script-->
+<script src="./js/toptobottom.js"></script>
 
 </html>
