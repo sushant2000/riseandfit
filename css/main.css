@@ -903,7 +903,7 @@ details {
   }
 } */
 .coreElementsContainer{
-  height: 40%;
+  height: 60%;
   width: 100%;
   text-align: center;
 }
@@ -918,14 +918,14 @@ details {
 
 .core-element{
   position:relative;
-  width: 70px;
-  height: 70px;
+  width: 85px;
+  height: 85px;
 }
 
 
 .core-element img {
   position:absolute;
-  height: 70px;
+  height: 85px;
   left:0;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
