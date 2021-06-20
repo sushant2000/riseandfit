@@ -1,0 +1,108 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>RiseAndFit</title>
+		<link href="style.css" rel="stylesheet">
+		<link href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" rel="stylesheet">
+		<link href="nav.css" rel="stylesheet" type="text/css" />
+</head>
+	<body>
+		<div class="full-page">
+
+			<div class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a href="index.html" class="navbar-brand"><img src="raflogo.jpg"></a>
+      <!--<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>-->
+
+      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+        <div class="navbar-nav ml-auto">
+          <a href="index.html" class="nav-item nav-link">Home</a>
+          <a href="" class="nav-item nav-link">About</a>
+          <a href="" class="nav-item nav-link">Service</a>
+          <a href="" class="nav-item nav-link">Programs</a>
+          <a href="" class="nav-item nav-link">Blog</a>
+          <a href="" class="nav-item nav-link">Contact</a>
+					<a><button class="loginBtn nav-item nav-link" onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Join Us</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+			<!--<div class="navbar">
+				<div class="logo">
+        <img class="size" src="rise&fit.jpg" alt="">
+				</div>
+				<nav class="menu_list" id="menu_small">
+					<ul id="menuItems">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Program</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><button class="loginBtn" onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Join Us</button></li>
+					</ul>
+				</nav>
+				<a href="#" id="iconbar" onclick="responsive_menu()"><i class="fas fa-bars"></i></a>
+			</div>-->
+      <div id="login-form" class="login-page">
+        <div class="form-box">
+          <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" onclick="login()" class="toggle-btn">Log In</button>
+            <button type="button" onclick="register()" class="toggle-btn">Register</button>
+          </div>
+          <form id="login" class="input-group-login" action="" method="post">
+            <input type="email" class="input-field" placeholder="Email Id" required>
+            <input type="password" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="check-box"><span>Remember Password</span>
+            <button type="submit" class="submit-btn">Login</button>
+          </form>
+          <form id="register" class="input-group-register" action="" method="post">
+            <input type="text" class="input-field" placeholder="First Name" required>
+            <input type="text" class="input-field" placeholder="Last Name" required>
+            <input type="email" class="input-field" placeholder="Email Id" required>
+            <input type="password" class="input-field" placeholder="Enter Password" required>
+            <input type="password" class="input-field" placeholder="Confirm Password" required>
+            <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+            <button type="submit" class="submit-btn">Register</button>
+          </form>
+        </div>
+      </div>
+		</div>
+    <script>
+      var x=document.getElementById('login');
+      var y=document.getElementById('register');
+      var z=document.getElementById('btn');
+      function register(){
+        x.style.left='-400px';
+        y.style.left='50px';
+        z.style.left='110px';
+      }
+      function login(){
+        x.style.left='50px';
+        y.style.left='450px';
+        z.style.left='0px';
+      }
+    </script>
+    <script>
+      var modal=document.getElementById('login-form');
+        window.onclick= function(event){
+        if (event.target==modal) {
+          modal.style.display="none";
+        }
+      }
+    </script>
+		<script>
+			function responsive_menu(){
+				var e=document.getElementById('menu_small');
+				if(e.className==='menu_list'){
+					e.className+='responsive';
+				}
+				else {
+					e.className='menu_list';
+				}
+			}
+		</script>
+	</body>
+</html>
