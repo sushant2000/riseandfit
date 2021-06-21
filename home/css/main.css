@@ -6,7 +6,7 @@
 body {
   /* font-family: -apple-system, BlinkMacSystemFont; */
   box-sizing: border-box;
-  height: 100vh;
+  /* height: 100vh; */
   background: #faebd7;
 }
 
@@ -182,7 +182,7 @@ details {
 
 
 .slider {
-  height: 63%;
+  height: 64%;
   width: 100%;
   z-index: 100;
   position: absolute;
@@ -325,7 +325,7 @@ details {
 .bubbles {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 65vh;
   overflow: hidden;
 }
 
@@ -878,7 +878,7 @@ details {
   }
 } */
 .coreElementsContainer{
-  height: 50%;
+  height: 50vh;
   width: 100%;
   text-align: center;
   padding-top: 30px;
@@ -910,9 +910,111 @@ details {
 }
 
 
-
-
 .core-element img.top:hover {
   opacity:0;
 }
 
+
+@media(max-width:998px){
+  .core-elements {
+    width: 890px;
+    justify-content: space-around;
+}
+
+
+}
+
+
+@media(max-width:918px){
+  .core-elements {
+    width: 767px;
+}
+
+
+}
+
+
+@media(max-width:777px){
+  .core-elements {
+    width: 650px;
+}
+
+
+}
+
+@media(max-width:666px){
+  .core-elements {
+    width: 550px;
+}
+
+
+}
+
+@media(max-width:626px){
+  .core-element {
+    width: 150px;
+}
+
+details{
+  width: 350px;
+}
+
+}
+
+@media(max-width:623px){
+  .pinkbg{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  details {
+    margin: 7em 0;
+}
+
+}
+
+@media(max-width:555px){
+  .core-elements {
+    width: 496px;
+}
+
+}
+
+@media(max-width:517px){
+  .core-elements {
+    width: 496px;
+}
+
+.coreElementsContainer {
+  padding-top: 15px;
+}
+
+}
+
+@media(max-width:505px){
+  .core-elements {
+    width: 496px;
+}
+
+.coreElementsContainer {
+  padding-top: 15px;
+}
+
+}
+
+@media(max-width:505px){
+  .coreElementsContainer {
+    height: 40vh;
+}
+
+.core-elements {
+  width: 397px;
+  margin: 0;
+  /* justify-content: center; */
+  height: 86%;
+}
+
+.core-element img {
+  height: 131px;
+}
+}
