@@ -110,7 +110,7 @@ a, a:hover {
   margin-top: -70px !important;
 }
 .fh5co-network h2, .fh5co-about-us h2 {
-  color: #ff8013;
+  color: rgba(255, 94, 98, 1);
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 40px;
@@ -161,7 +161,7 @@ a, a:hover {
 }
 
 .fh5co-content-box {
-  background: #464646;
+  background: #faebd7;
   padding-bottom: 100px;
 }
 .fh5co-content-box .pr-0 img {
@@ -262,7 +262,7 @@ a, a:hover {
   max-height: 580px;
 }
 .fh5co-content-box .gallery .card .card-body {
-  background: #ff8013;
+  background: rgba(255, 94, 98, 1);
 }
 .fh5co-content-box .gallery .card .card-body h4 {
   color: #fff;
