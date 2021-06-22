@@ -1,6 +1,9 @@
 $(document).ready(function () {
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
+    if ($(window).width() < 992) {
+      $("#scroll").fadeIn();
+    }
+    else if ($(this).scrollTop() > 100) {
       $("#scroll").fadeIn();
     } else {
       $("#scroll").fadeOut();
@@ -11,3 +14,4 @@ $(document).ready(function () {
     return false;
   });
 });
+

@@ -39,6 +39,10 @@ body {
   justify-content: space-between;
 }
 
+.cardsMobile{
+  display: none;
+}
+
 “Segoe UI”,
 Roboto,
 Helvetica,
@@ -254,7 +258,7 @@ details {
 }
 .slider__contents {
   height: 100%;
-  padding: 2rem;
+  padding: 0 2rem;
   text-align: center;
   display: -webkit-box;
   display: -webkit-flex;
@@ -930,6 +934,14 @@ details {
     width: 767px;
 }
 
+.slider-bg {
+  background: #1a1e23;
+  height: 65vh;
+}
+
+.bubble{
+  display: none;
+}
 
 }
 
@@ -942,11 +954,89 @@ details {
 
 }
 
+@media(max-width:777px){
+
+  .cardsDesktop{
+    display: none;
+  }
+  .cardsMobile{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .menu__container {
+    width: 272px;
+    height: 268px;
+    font-size: 16px;
+    /* margin-left: 47px; */
+    /* margin-right: 20px; */
+    margin-top: 20vh;
+    /* margin-bottom: 10px; */
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 10px 40px 2px rgb(0 0 0 / 40%);
+    /* background: #000; */
+    transform-origin: center center 0px;
+    transition: all 0.5s ease-out;
+    animation-name: animate;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    transform: perspective(1000px) rotateX(
+24deg
+) rotateY(
+5deg
+) rotateZ(
+-12deg
+);
+    z-index: 1;
+
+  }
+
+  
+
+.slider__nav {
+   
+    margin: 0 12px;
+  }
+
+  .slider__contents {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  
+.firstItem {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+
+.slider__image{
+  height: 50px;
+    margin: auto 0;
+}
+
+.slider__caption{
+  margin: auto auto;
+}
+
+.slider__txt{
+  margin: auto;
+}
+
+}
+
+
 @media(max-width:666px){
   .core-elements {
     width: 550px;
 }
 
+.w-100 {
+  width: 100%!important;
+  height: 40vh;
+}
 
 }
 
@@ -999,6 +1089,43 @@ details{
 .coreElementsContainer {
   padding-top: 15px;
 }
+
+}
+
+@media(max-width:505px){
+  .cardsMobile {
+    display: flex;
+    justify-content: space-around;
+    width: 96.7%;
+}
+.menu__container {
+  width: 191px;
+  height: 247px;
+  font-size: 15px;
+  margin-left: 6px;
+  margin-right: 0;
+  margin-top: 12vh;
+  /* margin-bottom: 10px; */
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 10px 40px 2px rgb(0 0 0 / 40%);
+  /* background: #000; */
+  transform-origin: center center 0px;
+  transition: all 0.5s ease-out;
+  animation-name: animate;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  transform: perspective(1000px) rotateX( 
+5deg
+) rotateY( 
+5deg
+) rotateZ( 
+-4deg
+);
+  z-index: 1;
+
+}
+
 
 }
 
