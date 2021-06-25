@@ -282,6 +282,9 @@ h2{
 .fa-instagram-square{
    color:#fb3958;
 }
+.fa-facebook-square,.fa-linkedin{
+    color:#4267B2;
+}
 .fab:hover{
     opacity: 0.5;
     color:#ff8013;

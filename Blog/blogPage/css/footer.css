@@ -6,7 +6,7 @@ footer .footer1 p {
   margin-top: 30px;
 }
 footer .footer2 h4 {
-  color: #ff8013;
+  color: rgba(255, 94, 98, 1);
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   text-align: center;
@@ -25,7 +25,7 @@ footer .footer2 input[type='text'], footer .footer2 input[type='email'] {
 }
 footer .footer2 input[type='text']:focus, footer .footer2 input[type='email']:focus {
   box-shadow: none;
-  border-color: #ff8013;
+  border-color: rgba(255, 94, 98, 1);
 }
 footer .footer2 .btn {
   min-width: 150px;
@@ -71,7 +71,7 @@ footer .table td, footer .table th {
 footer::before {
   content: "";
   position: absolute;
-  border: 3px solid #ff8013;
+  border: 3px solid rgba(255, 94, 98, 1);
   width: 100%;
   left: 0;
 }
