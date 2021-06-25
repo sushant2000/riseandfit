@@ -1,7 +1,7 @@
 /*******************Blog Section Css Starts**************/
 .blog{
     position:relative;
-    height:4000px; 
+    min-height:1600px;
     overflow: hidden;
     width: 100%;
 }
