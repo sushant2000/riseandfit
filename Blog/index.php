@@ -6,14 +6,14 @@ include 'connection.php';
 if (isset($_POST['submit'])) {    
 $email = $_POST['email'];
 //Check for duplicate and not added in database
-$dup=mysqli_query($conn, "select * from `blog_emails`.`emails` where email = '$email' " );
+$dup=mysqli_query($conn, "select * from `blogsDb`.`emails` where email = '$email' " );
 if(mysqli_num_rows($dup)>0){
   echo "<script>alert('Already Subscribed')</script>";
 }
 else{
 
 //Inserting (emails of newsletter) into database
-$sql = "INSERT INTO `blog_emails`.`emails` ( `email`, `dt`) 
+$sql = "INSERT INTO `blogsDb`.`emails` ( `email`, `dt`) 
           VALUES ('$email', current_timestamp())";
     
 // echo $sql;
@@ -109,7 +109,7 @@ else{
       <?php
        include "pagination.php"; 
        //Traversing database of blog post and print it on screen
-       $sql='SELECT * FROM `blog_emails`.`blogpost` ORDER BY id DESC LIMIT ' . $this_page_first_result . ',' .  $results_per_page;
+       $sql='SELECT * FROM `blogsDb`.`blogpost` ORDER BY id DESC LIMIT ' . $this_page_first_result . ',' .  $results_per_page;
        $query = mysqli_query($conn, $sql);
       while($item = mysqli_fetch_array($query)) {
 
@@ -223,13 +223,13 @@ else{
 
         <ul class="sci">
           <li>
-            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.facebook.com/Riseandfit"><i class="fab fa-facebook-square"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="https://www.instagram.com/riseandfitt/"><i class="fab fa-instagram-square"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/company/riseandfit"><i class="fab fa-linkedin"></i></a>
           </li>
 
         </ul>
@@ -302,9 +302,9 @@ else{
           <p>riseandfitt@gmail.com</p>
           <div class="social-links">
             <ul class="nav nav-item">
-              <li><a href="https://www.facebook.com/Riseandfit" class="btn btn-secondary mr-1 mb-2"><img
+              <li><a href="https://www.facebook.com/Riseandfit        " class="btn btn-secondary mr-1 mb-2"><img
                     src="./images/facebook.png" alt="facebook" /></a></li>
-              <li><a href="https://www.instagram.com/riseandfitt/" class="btn btn-secondary mr-1 ml-1 mb-2"><img
+              <li><a href="https://www.instagram.com/riseandfitt/     " class="btn btn-secondary mr-1 ml-1 mb-2"><img
                     src="./images/instalogo.png" alt="Instagram" /></a></li>
               <li><a href="https://www.linkedin.com/company/riseandfit" class="btn btn-secondary mr-1 ml-1 mb-2"><img
                     src="./images/linkedinlogo.png" alt="linkedin" /></a></li>

@@ -38,7 +38,7 @@ if (isset($_POST['submit']) && isset($_FILES['my_image'])) {
 					$content = $_POST['content'];
 					// $my_image = $_POST['my_image'];
 			
-					$sql = "INSERT INTO `blog_emails`.`blogpost`(title,img_url,content) 
+					$sql = "INSERT INTO `blogsdb`.`blogpost`(title,img_url,content) 
 							VALUES('$title','$new_img_name', '$content')";
 					mysqli_query($conn, $sql);
 			
