@@ -7,12 +7,12 @@ if (isset($_POST['submit'])) { // Check press or not Post Comment Button
 	$email = $_POST['email']; // Get Email from form
 	$comment = $_POST['comment']; // Get Comment from form
 //Check for duplicate comment by same id
-  $dup=mysqli_query($conn, "select * from `blog_emails`.`comments` where email = '$email' " );
+  $dup=mysqli_query($conn, "select * from `blogsDb`.`comments` where email = '$email' " );
   if(mysqli_num_rows($dup)>0){
     echo "<script>alert('Already Post comment')</script>";
   }
   else{
-	$sql = "INSERT INTO `blog_emails`.`comments` (name, email, comment)
+	$sql = "INSERT INTO `blogsDb`.`comments` (name, email, comment)
 			VALUES ('$name', '$email', '$comment')";
 	$result = mysqli_query($conn, $sql);
 	if ($result) {
@@ -32,14 +32,14 @@ if (isset($_POST['submit'])) { // Check press or not Post Comment Button
 if (isset($_POST['submits'])) {    
   $email = $_POST['emails'];
   //Check for duplicate and not added in database
-  $dup=mysqli_query($conn, "select * from `blog_emails`.`emails` where email = '$email' " );
+  $dup=mysqli_query($conn, "select * from `blogsDb`.`emails` where email = '$email' " );
   if(mysqli_num_rows($dup)>0){
     echo "<script>alert('Already Subscribed')</script>";
   }
   else{
   
   //Inserting (emails of newsletter) into database
-  $sql = "INSERT INTO `blog_emails`.`emails` ( `email`, `dt`) 
+  $sql = "INSERT INTO `blogsDb`.`emails` ( `email`, `dt`) 
             VALUES ('$email', current_timestamp())";
       
   // echo $sql;
@@ -119,7 +119,7 @@ if (isset($_POST['submits'])) {
     //Loop to display blogpost Title and time from database
      if(isset($_REQUEST['id'])){
         $id = $_REQUEST['id'];
-        $sql = "SELECT * FROM `blog_emails`.`blogpost`  WHERE id = $id";
+        $sql = "SELECT * FROM `blogsdb`.`blogpost`  WHERE id = $id";
              
         $query = mysqli_query($conn, $sql);
        
@@ -190,16 +190,18 @@ if (isset($_POST['submits'])) {
      <div class="prev-comments">
             <?php 
             
-            $sql = "SELECT * FROM `blog_emails`.`comments` ORDER BY id DESC";
+            $sql = "SELECT * FROM `blogsdb`.`comments` ORDER BY id DESC";
             $result = mysqli_query($conn, $sql);
             if (mysqli_num_rows($result) > 0) {
               while ($row = mysqli_fetch_assoc($result)) {
       
             ?>
             <div class="single-item">
-              <h4><?php echo $row['name']; ?></h4>
-              <a href="mailto:<?php echo $row['email']; ?>"><?php echo $row['email']; ?></a>
-              <p><?php echo $row['comment']; ?></p>
+              <h4><?php echo $row['name']; ?>
+             <a style="font-style:italic;display:inline-block;font-weight:normal;" href="mailto:<?php echo $row['email']; ?>"><?php echo $row['email']; ?></a>
+             </h4>
+              <h6><?php echo $row['dt']; ?></h4>
+              <p style="font-size:18px;"><?php echo $row['comment']; ?></p>
             </div>
             <?php
       
@@ -284,13 +286,13 @@ if (isset($_POST['submits'])) {
         <h2>Follow us</h2>
         <ul class="sci">
          <li>
-           <a href="#"><i class="fab fa-facebook-square"></i></a>
+           <a href="https://www.facebook.com/Riseandfit"><i class="fab fa-facebook-square"></i></a>
          </li>
          <li>
-           <a href="#"><i class="fab fa-instagram-square"></i></a>
+           <a href="https://www.instagram.com/riseandfitt/"><i class="fab fa-instagram-square"></i></a>
          </li>
          <li>
-           <a href="#"><i class="fab fa-linkedin"></i></a>
+           <a href="https://www.linkedin.com/company/riseandfit"><i class="fab fa-linkedin"></i></a>
          </li>
          
        </ul>
