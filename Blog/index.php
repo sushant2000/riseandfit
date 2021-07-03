@@ -1,3 +1,4 @@
+
 <?php
 // //Making a database connection
 include 'connection.php';
@@ -156,7 +157,7 @@ if (isset($_POST['submit'])) {
             <div class="description">
                 <h2>Why Rise and fit?</h2>
                 <h1 class="border"></h1>
-                <img class="imgRAF" src="./images/Raf/raf.jpg" alt="riseandfit">
+                <img class="imgRAF" src="./images/Raf/raf.png" alt="riseandfit">
                 <p class="RAFp">Let's take a step, invest your time and energy, yourself for the
                     good of yous and your family.Come join the way to a healthy life. Weaving fitness
                     into your busy lifestyle!
