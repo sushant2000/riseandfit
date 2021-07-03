@@ -4,15 +4,15 @@
     ini_set("display_errors", "off");
 
     // Initialize a database connection
-    $conn = mysqli_connect("localhost", "root", "");
-
+    // $conn = mysqli_connect("localhost", "root", "");
+	include "../connection.php";
     // Destroy if not possible to create a connection
-    if(!$conn){
-        echo "<h3 class='container bg-dark p-3 text-center text-warning rounded-lg mt-5'>Not able to establish Database Connection<h3>";
-    }
+    // if(!$conn){
+    //     echo "<h3 class='container bg-dark p-3 text-center text-warning rounded-lg mt-5'>Not able to establish Database Connection<h3>";
+    // }
 
     // Get data to display on index page
-    $sql = "SELECT * FROM `blogsdb`.`blogpost` ORDER BY id DESC";
+    $sql = "SELECT * FROM `blogpost` ORDER BY id DESC";
     $query = mysqli_query($conn, $sql);
 
     // Create a new post
@@ -22,7 +22,7 @@
         $content = $_POST['content'];
         // $my_image = $_POST['my_image'];
 
-        $sql = "INSERT INTO `blogsdb`.`blogpost`(title,img_url,content) 
+        $sql = "INSERT INTO `blogpost`(title,img_url,content) 
                 VALUES('$title','$new_img_name', '$content')";
         mysqli_query($conn, $sql);
 
@@ -35,7 +35,7 @@
     // Get post data based on id
     if(isset($_REQUEST['id'])){
         $id = $_REQUEST['id'];
-        $sql = "SELECT * FROM `blogsdb`.`blogpost`  WHERE id = $id";
+        $sql = "SELECT * FROM `blogpost`  WHERE id = $id";
              
         $query = mysqli_query($conn, $sql);
        
@@ -47,7 +47,7 @@
     if(isset($_REQUEST['delete'])){
         $id = $_REQUEST['id'];
 
-        $sql = "DELETE FROM `blogsdb`.`blogpost` WHERE id = $id";
+        $sql = "DELETE FROM `blogpost` WHERE id = $id";
         mysqli_query($conn, $sql);
 
         header("Location: newBlog.php");
@@ -60,11 +60,9 @@
         $title = $_REQUEST['title'];
         $content = $_REQUEST['content'];
 
-        $sql = "UPDATE `blogsdb`.`blogpost` SET title = '$title', content = '$content' WHERE id = $id";
+        $sql = "UPDATE `blogpost` SET title = '$title', content = '$content' WHERE id = $id";
         mysqli_query($conn, $sql);
 
         header("Location: newBlog.php");
         exit();
     }
-
-?>

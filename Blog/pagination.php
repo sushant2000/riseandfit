@@ -3,7 +3,7 @@
 $results_per_page = 3;
 
 // find out the number of results stored in database
-$sql='SELECT * FROM `blogsdb`.`blogpost`';
+$sql='SELECT * FROM `blogpost`';
 $result = mysqli_query($conn, $sql);
 $number_of_results = mysqli_num_rows($result);
 
@@ -19,8 +19,3 @@ if (!isset($_GET['page'])) {
 
 // determine the sql LIMIT starting number for the results on the displaying page
 $this_page_first_result = ($page-1)*$results_per_page;
-
-
-
-
-?>
