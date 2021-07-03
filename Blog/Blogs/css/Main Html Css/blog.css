@@ -401,11 +401,17 @@ h2{
 .blog{
     height: 3800px;
 }
+.blogFeature{
+    width:100%;
+}
 }
 
 @media(max-width:468px){
     .blog{
         height: 3884px;
+    }
+    .blogFeature{
+        width:100%;
     }
     }
 
@@ -413,15 +419,24 @@ h2{
     .blog{
         height: 3960px;
     }
+    .blogFeature{
+        width:100%;
+    }
     }
 
 @media(max-width:424px){
     .blog{
         height: 4000px;
     }
+    .blogFeature{
+        width:100%;
+    }
     }
  @media(max-width:292px){
     .blog{
         height:5000px
+    }
+    .blogFeature{
+        width:100%;
     }
       }  
