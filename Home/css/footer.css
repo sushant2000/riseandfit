@@ -211,6 +211,7 @@ footer p {
   }
 } */
 
+
 footer {
   background: #101011;
   color: #fff;
@@ -259,8 +260,8 @@ footer .footer1 p {
   margin-top: 30px;
 }
 footer .footer2 h4 {
-  color: rgba(255, 94, 98, 1);
-  font-family: "Lato", sans-serif;
+  color:rgba(255, 94, 98, 1);
+  font-family: 'Lato', sans-serif;
   font-weight: 700;
   text-align: center;
   margin: 20px auto;
@@ -270,15 +271,13 @@ footer .footer2 .form-box {
   padding: 20px 30px;
   margin-top: -30px;
 }
-footer .footer2 input[type="text"],
-footer .footer2 input[type="email"] {
+footer .footer2 input[type='text'], footer .footer2 input[type='email'] {
   background: transparent;
   border-radius: 0;
   border: none;
   border-bottom: 2px solid #000;
 }
-footer .footer2 input[type="text"]:focus,
-footer .footer2 input[type="email"]:focus {
+footer .footer2 input[type='text']:focus, footer .footer2 input[type='email']:focus {
   box-shadow: none;
   border-color: #ff8013;
 }
@@ -319,8 +318,7 @@ footer .footer3 a:hover {
 footer .footer3 .nav-item li {
   margin: 0 5px;
 }
-footer .table td,
-footer .table th {
+footer .table td, footer .table th {
   border: none;
 }
 
@@ -330,11 +328,4 @@ footer::before {
   border: 3px solid rgba(255, 94, 98, 1);
   width: 100%;
   left: 0;
-}
-
-@media (max-width: 576px) {
-  footer .footer1 p {
-    margin-top: 0;
-    margin-bottom: 50px;
-  }
 }
