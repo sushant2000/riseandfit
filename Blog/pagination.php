@@ -3,7 +3,7 @@
 $results_per_page = 3;
 
 // find out the number of results stored in database
-$sql='SELECT * FROM `blogpost`';
+$sql='SELECT * FROM `blogsdb`.`blogpost`';
 $result = mysqli_query($conn, $sql);
 $number_of_results = mysqli_num_rows($result);
 

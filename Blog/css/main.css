@@ -33,6 +33,7 @@ body{
  }
 .animation{
   padding-top:7rem;
+  padding-bottom:1rem;
   list-style-type:none;
   width:100%;
 }
@@ -131,7 +132,7 @@ body{
   transition: var(--eff);
   padding: .8rem 2rem;
   background-color: var(--btn-color);
-  border-color: var(--btn-color);
+  border:1px solid black;
   font-family: var(--title);
   outline: none;
   display:block;
