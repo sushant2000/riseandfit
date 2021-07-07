@@ -170,6 +170,35 @@
   }
 
 
+  @media only screen and (min-width:320px) and (max-width:480px) {
+
+    #points{
+        margin-top: 0rem;
+        font-size: 1rem;
+    }
+    
+        #price button{
+            margin:2vw 1vw 2vw 0vh;
+            height:30px;
+            width:80px;
+            font-size:2vh;
+            font-family:"Roboto" sans-serif; 
+            font-weight:Regular;
+            background-color:#345e82;
+            border:none;
+            outline:none;
+            color:white;
+            border-radius:10px;
+            transition:0.3s
+          }
+
+          #points h2{
+            margin-top: 0.8rem;
+            font-size: 1.5rem;
+        }  
+    
+    
+      }
 
 
   @media only screen and (min-width:481px) and (max-width:768px) {
