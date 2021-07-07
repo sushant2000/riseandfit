@@ -418,12 +418,12 @@ h2{
 
 @media(max-width:424px){
     .blog{
-        height: 4000px;
+        height: 2800px;
     }
     }
  @media(max-width:292px){
     .blog{
-        height:5000px
+        height:2800px
     }
 
       }  

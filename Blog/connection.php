@@ -4,11 +4,11 @@
 
   // Initialize a database connection
 $server = "localhost";
-$user = "u118668223_blogmanager";
-$password = "Manish7352";
-$database = "u118668223_blogsdb";
+$user = "root";
+$password = "";
 
-$conn = mysqli_connect($server, $user, $password, $database);
+
+$conn = mysqli_connect($server, $user, $password);
 
   // Destroy if not possible to create a connection
   if(!$conn){
