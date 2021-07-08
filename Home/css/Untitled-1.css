@@ -1012,7 +1012,7 @@ details {
 
   
 .firstItem {
-  /* display: flex; */
+  display: flex;
   width: 100%;
   flex-wrap: wrap;
   /* justify-content: space-between; */
@@ -1267,21 +1267,4 @@ details{
   text-align: center;
   font-weight:bolder;
   transform: translate(-50%, -50%);
-}
-
-
-@media (max-width: 576px) {
-  .core--container {
-    display: grid;
-  }
-  .core--container .card {
-    display: grid;
-    padding: 10px;
-    /* flex: 100%;
-    width: 600px; */
-  }
-
-  .item3 {
-    display: none;
-  }
 }
