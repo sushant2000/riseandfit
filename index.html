@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="./home/image/favicon.png" />
+  <link rel="icon" href="./Home/image/favicon.png" />
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <title>Rise and Fit</title>
 
@@ -18,11 +18,11 @@
   <script src="https://kit.fontawesome.com/93c73bfd5a.js" crossorigin="anonymous"></script>
 
   <!-- My Stylesheet -->
-  <link rel="stylesheet" href="./home/css/nav.css" type="text/css" />
-  <link rel="stylesheet" href="./home/css/footer.css" type="text/css" />
-  <link rel="stylesheet" href="./home/css/main.css" type="text/css" />
-  <link rel="stylesheet" href="./home/css/popupAnimation.css" type="text/css" />
-  <link rel="stylesheet" href="./home/css/bottomToTop.css" type="text/css" />
+  <link rel="stylesheet" href="./Home/css/nav.css" type="text/css" />
+  <link rel="stylesheet" href="./Home/css/footer.css" type="text/css" />
+  <link rel="stylesheet" href="./Home/css/main.css" type="text/css" />
+  <link rel="stylesheet" href="./Home/css/popupAnimation.css" type="text/css" />
+  <link rel="stylesheet" href="./Home/css/bottomToTop.css" type="text/css" />
 </head>
 
 <body>
@@ -32,12 +32,12 @@
       <div class="modal-content">
         <div class="modal-body">
           <div class="HomeVideo">
-            <button type="button" class="close modalDisplay" data-dismiss="modal" aria-label="Close">
+            <!-- <button type="button" class="close modalDisplay" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true"><i class="fas fa-times"></i></span>
-            </button>
+            </button> -->
 
             <video class="firstSection" autoplay muted loop>
-              <source src="./home/dimaond video/RISE AND FIT.mp4" type="video/mp4" />
+              <source src="./Home/dimaond video/RISE AND FIT.mp4" type="video/mp4" />
               Your browser does not support playing this Video
             </video>
           </div>
@@ -47,26 +47,42 @@
   </div>
   <!-- Pop up Window close -->
 
-  <!-- Nav Bar Start -->
-  <div class="navbar navbar-expand-lg bg-dark navbar-dark">
-    <div class="container-fluid">
-      <a href="" class="navbar-brand"><img src="./home/image/raflogo.jpg"></a>
-      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+ <!-- Nav Bar Start -->
+ <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a href="#" class="navbar-brand"><img src="./Home/image/raflogo.jpg" /></a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-        <div class="navbar-nav ml-auto">
-          <a href="" class="nav-item nav-link">home</a>
-          <a href="./Blog/" class="nav-item nav-link">Blogs</a>
-          <a href="./Programs/" class="nav-item nav-link">Programs</a>
-          <a href="./JoinUs/" class="nav-item nav-link">Join us</a>
-          <a href="./AboutUs/" class="nav-item nav-link">About</a>
-        </div>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+      <div class="navbar-nav ml-auto">
+        <a href="#" class="nav-item nav-link">Home</a>
+        <a href="./Blog/" class="nav-item nav-link">Blogs</a>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Programs
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="./Programs/Addiction Management/">Addiction Management</a>
+            <a class="dropdown-item" href="./Programs/Healthy Community/">Healthy Community</a>
+            <a class="dropdown-item" href="./Programs/On-Site Plans/">Onsite Plans </a>
+            <a class="dropdown-item" href="./Programs/Stress Management/">Stress Management</a>
+            <a class="dropdown-item" href="./Programs/Webinar And Workshop/">Webinars and Workshops</a>
+            <a class="dropdown-item" href="./Programs/Weight And Diet Management/">Weight and Diet
+              Management</a>
+          </div>
+        </li>
+
+        <a href="./JoinUs/login.php" class="nav-item nav-link">Join us</a>
+        <a href="./AboutUs/" class="nav-item nav-link">About</a>
       </div>
     </div>
   </div>
-  <!-- Nav Bar End -->
+</div>
+<!-- Nav Bar End -->
 
   <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
@@ -267,7 +283,7 @@
         <div class="slider__contents">
 
           <div class="firstItem">
-            <img src="home/image/review-human-icon.png" style="width:8%;">
+            <img src="Home/image/review-human-icon.png" style="width:8%;">
             <h2 class="slider__caption">Riya</h2>
             <p class="slider__txt">
               RAF is a great initiative and it has helped me a lot
@@ -275,7 +291,7 @@
           </div>
 
           <div class="firstItem">
-            <img src="home/image/review-human-icon.png" style="width:8%;">
+            <img src="Home/image/review-human-icon.png" style="width:8%;">
             <h2 class="slider__caption">Manish</h2>
             <p class="slider__txt">
               RAF's Stress management course has helped me a lot during these tough times in pandemic.
@@ -283,7 +299,7 @@
           </div>
 
           <div class="firstItem">
-            <img src="home/image/review-human-icon.png" style="width:8%;">
+            <img src="Home/image/review-human-icon.png" style="width:8%;">
             <h2 class="slider__caption">Sushant</h2>
             <p class="slider__txt">
               Webinars held by RAF has helped me overcome my fear of weight loosing and I also has gained a lot of
@@ -296,7 +312,7 @@
         <div class="slider__contents">
 
           <div class="firstItem">
-            <img src="home/image/review-human-icon.png" style="width:8%;">
+            <img src="Home/image/review-human-icon.png" style="width:8%;">
             <h2 class="slider__caption">Shubham</h2>
             <p class="slider__txt">
               After partnering with RAF, my overall growth has increased tremendously and I have been
@@ -305,7 +321,7 @@
           </div>
 
           <div class="firstItem">
-            <img src="home/image/review-human-icon.png" style="width:8%;">
+            <img src="Home/image/review-human-icon.png" style="width:8%;">
             <h2 class="slider__caption">Nikhil</h2>
             <p class="slider__txt">
               Their yoga sessions have been very immersive and amazing, I have started working stress-free in
@@ -314,7 +330,7 @@
           </div>
 
           <div class="firstItem">
-            <img src="home/image/review-human-icon.png" style="width:8%;">
+            <img src="Home/image/review-human-icon.png" style="width:8%;">
             <h2 class="slider__caption">Arshad</h2>
             <p class="slider__txt">
               I have gained a lot of knowledge and information by subscribing to their paid packs and I am
@@ -327,7 +343,7 @@
         <div class="slider__contents">
 
           <div class="firstItem">
-            <img src="home/image/review-human-icon.png" style="width:8%;">
+            <img src="Home/image/review-human-icon.png" style="width:8%;">
             <h2 class="slider__caption">Rutuja</h2>
             <p class="slider__txt">
               I am engaged with RAF since past 2 years and we have experienced a lot of growth in myself.
@@ -335,7 +351,7 @@
           </div>
 
           <div class="firstItem">
-            <img src="home/image/review-human-icon.png" style="width:8%;">
+            <img src="Home/image/review-human-icon.png" style="width:8%;">
             <h2 class="slider__caption">Ritvik</h2>
             <p class="slider__txt">
               I have been growing exponentially.
@@ -343,7 +359,7 @@
           </div>
 
           <div class="firstItem">
-            <img src="home/image/review-human-icon.png" style="width:8%;">
+            <img src="Home/image/review-human-icon.png" style="width:8%;">
             <h2 class="slider__caption">Apporav</h2>
             <p class="slider__txt">
               I am really ecstatic to be a part of RAF. Their webinars and sessions are one of the best sessions I have ever taken.
@@ -418,21 +434,21 @@
     <div class="core-elements">
       <div class="core-element" id="neer">
         <a href="#">
-          <img class="bottom" src="./home/core-elements-img/neer white.png" title="Neer" /></a>
+          <img class="bottom" src="./Home/core-elements-img/neer white.png" title="Neer" /></a>
         <a href="#">
-          <img class="top" src="./home/core-elements-img/neer color.png" title="Neer" /></a>
+          <img class="top" src="./Home/core-elements-img/neer color.png" title="Neer" /></a>
       </div>
       <div class="core-element" id="rakth">
         <a href="#">
-          <img class="bottom" src="./home/core-elements-img/rakth white.png" title="Rakth" /></a>
+          <img class="bottom" src="./Home/core-elements-img/rakth white.png" title="Rakth" /></a>
         <a href="#">
-          <img class="top" src="./home/core-elements-img/rakth color.png" title="Rakth" /></a>
+          <img class="top" src="./Home/core-elements-img/rakth color.png" title="Rakth" /></a>
       </div>
       <div class="core-element" id="vayu">
         <a href="#">
-          <img class="bottom" src="./home/core-elements-img/vayu white.png" title="Vayu" /></a>
+          <img class="bottom" src="./Home/core-elements-img/vayu white.png" title="Vayu" /></a>
         <a href="#">
-          <img class="top" src="./home/core-elements-img/vayu color.png" title="Vayu" /></a>
+          <img class="top" src="./Home/core-elements-img/vayu color.png" title="Vayu" /></a>
       </div>
     </div>
   </div> -->
@@ -452,7 +468,7 @@
       <div class="card">
         <div class="face face1">
           <div class="content">
-            <img src="./home/core-elements-img/neer color.png" title="Neer" />
+            <img src="./Home/core-elements-img/neer color.png" title="Neer" />
             <h3>Neer</h3>
           </div>
         </div>
@@ -465,7 +481,7 @@
       <div class="card">
         <div class="face face1">
           <div class="content">
-            <img class="bottom" src="./home/core-elements-img/rakth color.png" title="Rakth" />
+            <img class="bottom" src="./Home/core-elements-img/rakth color.png" title="Rakth" />
             <h3>Rakht</h3>
           </div>
         </div>
@@ -478,7 +494,7 @@
       <div class="card">
         <div class="face face1">
           <div class="content">
-            <img class="bottom" src="./home/core-elements-img/vayu color.png" title="Vayu" />
+            <img class="bottom" src="./Home/core-elements-img/vayu color.png" title="Vayu" />
             <h3>Vayu</h3>
           </div>
         </div>
@@ -496,7 +512,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-3 footer1 d-flex wow bounceInLeft" data-wow-delay=".25s">
-          <div class="d-flex flex-wrap align-content-center"> <a href="#"><img src="./home/image/raflogo.jpg"
+          <div class="d-flex flex-wrap align-content-center"> <a href="#"><img src="./Home/image/raflogo.jpg"
                 alt="logo" /></a>
             <p>Let's take a step, invest your time and energy, yourself for the good of you and your family. Come join
               the way to a healthy life. Weaving fitness into your busy lifestyle!
@@ -546,12 +562,12 @@
           <p>riseandfitt@gmail.com</p>
           <div class="social-links">
             <ul class="sci">
-              <li><a href="https://www.facebook.com/Riseandfit"><img style="margin-bottom: 8px;" src="./home/image/facebook.png" alt="facebook"></a>
+              <li><a href="https://www.facebook.com/Riseandfit"><img style="margin-bottom: 8px;" src="./Home/image/facebook.png" alt="facebook"></a>
               </li>
               <li><a href="https://www.instagram.com/riseandfitt/" class="btn btn-secondary mr-1 ml-1 mb-2"><img style="margin-bottom: 8px;"
-                    src="./home/image/instalogo.png" alt="Instagram" /></a></li>
+                    src="./Home/image/instalogo.png" alt="Instagram" /></a></li>
               <li><a href="https://www.linkedin.com/company/riseandfit" class="btn btn-secondary mr-1 ml-1 mb-2"><img style="margin-bottom: 8px;"
-                    src="./home/image/linkedinlogo.png" alt="linkedin" /></a></li>
+                    src="./Home/image/linkedinlogo.png" alt="linkedin" /></a></li>
             </ul>
           </div>
         </div>
@@ -565,14 +581,14 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
 
 <!-- Navigation Bar Javascript -->
-<script src="./home/js/nav.js"></script>
+<script src="./Home/js/nav.js"></script>
 
 <!-- Pop up Animation Javascript -->
-<script src="./home/js/popupAnimation.js"></script>
+<script src="./Home/js/popupAnimation.js"></script>
 
 <!--Scroll to Top Script-->
-<script src="./home/js/bottomToTop.js"></script>
+<script src="./Home/js/bottomToTop.js"></script>
 
-<script src="./home/js/headerSlider.js"></script>
+<script src="./Home/js/headerSlider.js"></script>
 
 </html>

@@ -58,8 +58,10 @@ sans-serif,
 }
 
 .menu__container {
+
   width: 289px;
   height: 293px;
+  background-color: beige;
   font-size: 16px;
   margin-left: 58px;
   margin-right: 20px;
@@ -92,6 +94,7 @@ sans-serif,
 }
 .card-img {
   max-width: 100%;
+  background-color: white;
   width: 289px;
   border-radius: 15px;
 }
